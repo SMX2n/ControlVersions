@@ -10,7 +10,7 @@ El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordi
 2. Obre la terminal a la teva carpeta de projectes i executa:  
 
 ```Bash  
-git clone \<URL\_DEL\_REPOSITORI\>
+git clone <URL_DEL_REPOSITORI>
 ```
 
 3. Entra a la carpeta creada: cd nom-del-repositori.
@@ -167,7 +167,7 @@ Dins del fitxer, veureu botons a sobre del text que diuen:
 - Accept Both Changes: Posa un text sota l'altre.
 ```
 
-Un cop triat, prem el + al panell de control de versions per marcar-lo com a resolt i fes el commit final.
+Un cop triat, prem el `+` al panell de control de versions per marcar-lo com a resolt i fes el commit final.
 
 ## 5\. Repositoris dins de Repositoris: Git Subtree
 
@@ -196,4 +196,4 @@ git subtree pull --prefix assets/imatges <URL_DEL_REPO_EXTERN> main --squash
 
 ## Nota Final
 
-**Consell de professor**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes\!
+**Consell**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes\!
