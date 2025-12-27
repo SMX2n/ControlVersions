@@ -13,7 +13,11 @@ El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordi
 git clone <URL_DEL_REPOSITORI>
 ```
 
-3. Entra a la carpeta creada: cd nom-del-repositori.
+També podeu obrir el repositori directament amb VS Code:
+
+1. Obriu VS Code.
+2. A la pantalla d'inici, feu clic a "Clonar Repositori" (Clone Repository).
+3. Enganxeu l'URL del repositori i trieu la carpeta on voleu guardar-lo.
 
 ## 2\. Edició en Local i Control de Versions
 
