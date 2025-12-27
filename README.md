@@ -147,7 +147,7 @@ De tota manera, VS Code fa que mantenir el vostre codi al dia amb GitHub sigui m
 
 Si voleu més control, premeu els tres punts (...) de la part superior del panell de Control de Codi Font. Allà trobareu les opcions explícites de "Extraure" (Pull) i "Enviar" (Push).
 
-[!TIP] Consell del professor: Fixeu-vos en la barra d'estat (la part inferior blava de l'editor). Allà veureu unes fletxes amb números: la fletxa cap avall indica quants commits teniu pendents de baixar, i la cap amunt quants commits heu fet que encara no heu pujat a GitHub.
+>**Important**: Fixeu-vos en la barra d'estat (la part inferior blava de l'editor). Allà veureu unes fletxes amb números: la fletxa cap avall indica quants commits teniu pendents de baixar, i la cap amunt quants commits heu fet que encara no heu pujat a GitHub.
 
 ## 4\. Gestió de Conflictes
 
@@ -196,4 +196,4 @@ git subtree pull --prefix assets/imatges <URL_DEL_REPO_EXTERN> main --squash
 
 ## Nota Final
 
-**Consell**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes\!
+>**Consell final**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes\!
