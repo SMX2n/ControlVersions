@@ -27,6 +27,7 @@ El staging és com una llista de coses que voleu incloure en la propera "foto" d
 
 El commit és l'acció de "fer una foto" del projecte en aquell moment. Aquí és on posem una etiqueta descriptiva per recordar què hem fet. Els diferents commits formen l'historial del projecte i s'identifiquen amb un codi únic (hash).
 
+```plain
            ┌────────────────────┐
            │  Working Directory │
            │ (fitxers editats)  │
@@ -48,8 +49,7 @@ El commit és l'acció de "fer una foto" del projecte en aquell moment. Aquí é
            ┌────────────────────┐
            │  Working Directory │
            └────────────────────┘
-
-Si vols, te’l puc fer més estilitzat, més “manga-tech” per als teus alumnes, o adaptar-lo a GitHub, GitLab o al flux que utilitzeu a classe.
+```
 
 ### Add i Commit per per terminal
 
