@@ -210,7 +210,7 @@ A vegades voldreu incloure un projecte sencer (com una llibreria o un repositori
 Suposem que vols afegir un repositori de "Imatges" dins d'una carpeta anomenada assets/imatges:
 
 ```Bash
-git subtree add --prefix assets/imatges <URL_DEL_REPO_EXTERN\> main --squash
+git subtree add --prefix assets/imatges <URL_DEL_REPO_EXTERN> main --squash
 ```
 
 Si es vol fer des de VS Code, obre la terminal integrada (Ctrl + `) i executa la mateixa comanda.
