@@ -4,6 +4,10 @@ Aquesta guia us servirà per gestionar els vostres projectes de documentació di
 
 Veurem com clonar un repositori, fer canvis locals, gestionar versions amb commits, i sincronitzar els canvis amb el repositori remot a GitHub. També veurem com resoldre conflictes i com utilitzar subtrees per incloure altres repositoris dins del vostre projecte. Usarem bàsicament les opcions de Visual Studio Code, tot i que també s'indiquen les comandes per fer-ho des de la terminal.
 
+Visual Studio Code (VS Code) ja té integrat el suport per a Git, així que no cal instal·lar res addicional. Però existeixen algunes extensions útils per millorar l'experiència, com ara:
+
+* **Git Graph**: Permet visualitzar l'historial de commits de manera gràfica i gestionar branques fàcilment.
+
 ## 1\. Clonar el Repositori
 
 El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordinador local.
