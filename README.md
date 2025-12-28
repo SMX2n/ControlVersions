@@ -219,6 +219,7 @@ On:
 
 * --prefix: Indica la carpeta on es guardarà.  
 * --squash: Fa que tot l'historial del repositori extern s'ajunti en un sol commit (per no embrutar el teu historial).
+![VS Code Subtree](img/VSCodeSubtree.png)
 
 ### Com actualitzar el Subtree més endavant
 
