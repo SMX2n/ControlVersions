@@ -7,6 +7,8 @@ Aquesta guia us servirà per gestionar els vostres projectes de documentació di
 El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordinador local.
 
 1. A GitHub, copia l'URL del repositori (botó verd **Code**).  
+
+![GitHub Clone](img/GitHubClone.png)
 2. Obre la terminal a la teva carpeta de projectes i executa:  
 
 ```Bash  
@@ -15,9 +17,11 @@ git clone <URL_DEL_REPOSITORI>
 
 També podeu obrir el repositori directament amb VS Code:
 
-1. Obriu VS Code.
+1. Obriu VS Code i seleccionar "Explorador" (Explorer) a la barra lateral esquerra.
 2. A la pantalla d'inici, feu clic a "Clonar Repositori" (Clone Repository).
+![VS Code Explorer](img/VCodeExplorer.png)
 3. Enganxeu l'URL del repositori i trieu la carpeta on voleu guardar-lo.
+![VS Code Clone](img/VCodeClone.png)
 
 ## 2\. Edició en Local i Control de Versions
 
@@ -79,11 +83,15 @@ Un cop obert el vostre repositori amb VS Code, veureu que a la barra lateral esq
 
 A mesura que modifiqueu els fitxers .md, aquests apareixeran a la llista de "Canvis" (Changes).
 
+![VS Code Git](img/VCodeGit.png)
+
 * **Afegir els canvis (Add / Staging):**
 
     Al costat del nom del fitxer que heu editat, apareixerà una icona d'un més (+).
 
     Si premeu el +, el fitxer passarà a la secció "Canvis preparats" (Staged Changes). Això equival a fer un git add.
+
+    ![VS Code Add](img/VCodeAdded.png)
 
 * **Confirmar els canvis (Commit):**
 
@@ -91,9 +99,11 @@ A mesura que modifiqueu els fitxers .md, aquests apareixeran a la llista de "Can
 
     Premeu el botó blau que diu "Confirmar" (Commit). Ara el canvi ja està guardat al vostre historial local.
 
-### Desfer canvis abans del Commit
+    ![VS Code commit dialog showing blue Commit button in the source control panel, with a commit message field above it and staged changes listed below](img/VCodeCommit.png)
 
-Si us heu equivocat i voleu desfer els canvis abans de fer el commit:
+### Desfer canvis respecte l'staging
+
+Si us heu equivocat i voleu desfer els canvis respecte a la versió guardada en staging (sense necessitat de fer una succesió de CTRL+Z):
 
 * Per terminal:  
 
@@ -102,6 +112,7 @@ git checkout -- nom_del_fitxer.md
 ```
 
 * Per VS Code: Feu clic dret sobre el fitxer a la llista de canvis i trieu "Descartar canvis" (Discard Changes).
+![VS Code Discard Changes between Working Directory and Staging Area](img/VCodeDiscard.png)
 
 ### Desfer canvis després de l'Add però abans del Commit
 
@@ -113,7 +124,8 @@ Si heu fet un git add però encara no heu fet commit i voleu desfer l'add:
 git reset nom_del_fitxer.md
 ```
 
-* Per VS Code: Feu clic dret sobre el fitxer a la llista de "Canvis preparats" (Staged Changes) i trieu "Desfer l'add" (Unstage Changes).
+* Per VS Code: Al costat de l'arxiu hi ha un icona de menys (-). Feu clic per treure'l de l'staging. L'arxiu encara tindrà els canvis, però ja no estarà preparat per al commit i si es volen revertir els canvis, farem l'acció de "Desfer canvis" (Discard Changes) explicada abans.
+![VS Code Unstage](img/VCodeUnstage.png)
 
 ### Desfer un Commit ja fet
 
@@ -127,7 +139,9 @@ git reset --soft HEAD~1
 
 Això desfarà l'últim commit però mantindrà els canvis a la zona de preparació (staging area).
 
-* Per VS Code: Feu clic als tres punts (...) a la part superior del panell de Control de Codi Font i trieu "Desfer l'últim Commit" (Undo Last Commit).
+* Per VS Code: Feu clic als tres punts (...) a la part superior del panell de Control de Codi Font i dins l'opció Commit, trieu "Desfer l'últim Commit" (Undo Last Commit).
+
+![VS Code Undo Last Commit](img/VCodeUndoCommit.png)
 
 ## 3\. Sincronització amb el Repositori Remot
 
