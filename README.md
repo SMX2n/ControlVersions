@@ -2,6 +2,8 @@
 
 Aquesta guia us servirà per gestionar els vostres projectes de documentació directament des de la terminal o el vostre editor preferit (com VS Code). En cap cas és una guia exhaustiva de Git, sinó una introducció pràctica per a treballar amb fitxers Markdown (.md) i mantenir el vostre projecte sincronitzat amb GitHub.
 
+Veurem com clonar un repositori, fer canvis locals, gestionar versions amb commits, i sincronitzar els canvis amb el repositori remot a GitHub. També veurem com resoldre conflictes i com utilitzar subtrees per incloure altres repositoris dins del vostre projecte. Usarem bàsicament les opcions de Visual Studio Code, tot i que també s'indiquen les comandes per fer-ho des de la terminal.
+
 ## 1\. Clonar el Repositori
 
 El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordinador local.
@@ -143,6 +145,8 @@ Això desfarà l'últim commit però mantindrà els canvis a la zona de preparac
 
 ![VS Code Undo Last Commit](img/VCodeUndoCommit.png)
 
+>**Nota**: Si volem retornar a un commit anterior i descartar tots els canvis posteriors, podem utilitzar `git reset --hard <hash_del_commit>` per terminal. Això eliminarà tots els canvis posteriors al commit especificat. En el cas de VS Code, aquesta opció no està disponible directament a la interfície gràfica, però amb el complement `Git Graph` es pot fer de manera visual.
+
 ## 3\. Sincronització amb el Repositori Remot
 
 El vostre ordinador (Local) i GitHub (Remot) han d'estar sincronitzats.
@@ -214,4 +218,4 @@ git subtree pull --prefix assets/imatges <URL_DEL_REPO_EXTERN> main --squash
 
 ## Nota Final
 
->**Consell final**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes\!
+>**Consell final**: Feu git pull SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes!
