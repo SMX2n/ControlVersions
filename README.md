@@ -213,6 +213,8 @@ Suposem que vols afegir un repositori de "Imatges" dins d'una carpeta anomenada 
 git subtree add --prefix assets/imatges <URL_DEL_REPO_EXTERN\> main --squash
 ```
 
+Si es vol fer des de VS Code, obre la terminal integrada (Ctrl + `) i executa la mateixa comanda.
+
 On:
 
 * --prefix: Indica la carpeta on es guardarà.  
