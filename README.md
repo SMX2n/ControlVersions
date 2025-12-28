@@ -186,9 +186,10 @@ Un conflicte apareix s'ha editat **la mateixa línia** del mateix fitxer i inten
 
 ### Resolució de conflictes
 
-Si en fer Pull apareix un conflicte, VS Code és un dels millors editors per resoldre'ls:
+Si en sincronitzar apareix un conflicte, VS Code és un dels millors editors per resoldre'ls:
 
-El fitxer en conflicte es posarà de color lila/vermell.
+Els fitxer en conflicte es marcaran amb colors i indicacions visuals de les línies on es produeix el conflicte, en verd el canvi proposat en local i en blau el canvi rebut del repositori remot.
+![VS Code Conflict](img/VSCodeConflicte.png)
 
 Dins del fitxer, veureu botons a sobre del text que diuen:
 
@@ -198,7 +199,7 @@ Dins del fitxer, veureu botons a sobre del text que diuen:
 - Accept Both Changes: Posa un text sota l'altre.
 ```
 
-Un cop triat, prem el `+` al panell de control de versions per marcar-lo com a resolt i fes el commit final.
+Un cop triat, prem el `+` al panell de control de versions per marcar-lo com a resolt, fes el commit i després sincronitza els canvis.
 
 ## 5\. Repositoris dins de Repositoris: Git Subtree
 
