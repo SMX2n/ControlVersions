@@ -164,6 +164,7 @@ git pull origin main
 ```
 
 De tota manera, VS Code fa que mantenir el vostre codi al dia amb GitHub sigui molt visual. Un cop heu fet el commit, el botó blau normalment canviarà a "Sincronitzar canvis" (Sync Changes) amb una icona de fletxes circulars.
+![VS Code Sync](img/VCodeSync.png)
 
 **Sincronitzar** (Recomanat): Si premeu aquest botó, VS Code farà automàticament un Pull (per baixar canvis nous) i després un Push (per pujar els vostres). És la manera més fàcil d'evitar conflictes.
 
