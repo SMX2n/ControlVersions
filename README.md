@@ -170,8 +170,11 @@ De tota manera, VS Code fa que mantenir el vostre codi al dia amb GitHub sigui m
 
 Si voleu més control, premeu els tres punts (...) de la part superior del panell de Control de Codi Font. Allà trobareu les opcions explícites de "Extraure" (Pull) i "Enviar" (Push).
 
->**Important**: Fixeu-vos en la barra d'estat (la part inferior blava de l'editor). Allà veureu unes fletxes amb números: la fletxa cap avall indica quants commits teniu pendents de baixar, i la cap amunt quants commits heu fet que encara no heu pujat a GitHub.
+Fixeu-vos en la barra d'estat (la part inferior blava de l'editor). Allà veureu unes fletxes amb números: la fletxa cap avall indica quants commits teniu pendents de baixar, i la cap amunt quants commits heu fet que encara no heu pujat a GitHub.
+
 ![VS Code Status Bar](img/VCodeStatusBar.png)
+
+>**Important:** Feu sincronitzeu SEMPRE abans de començar a escriure. Us estalviareu el 90% dels conflictes!
 
 ## 4\. Gestió de Conflictes
 
