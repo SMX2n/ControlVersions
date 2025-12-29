@@ -1,5 +1,7 @@
 # Guia de Treball: Markdown i Control de Versions amb Git
 
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+
 Aquesta guia us servirà per gestionar els vostres projectes de documentació directament des de la terminal o el vostre editor preferit (com VS Code). En cap cas és una guia exhaustiva de Git, sinó una introducció pràctica per a treballar amb fitxers Markdown (.md) i mantenir el vostre projecte sincronitzat amb GitHub.
 
 Veurem com clonar un repositori, fer canvis locals, gestionar versions amb commits, i sincronitzar els canvis amb el repositori remot a GitHub. També veurem com resoldre conflictes i com utilitzar subtrees per incloure altres repositoris dins del vostre projecte. Usarem bàsicament les opcions de Visual Studio Code, tot i que també s'indiquen les comandes per fer-ho des de la terminal.
@@ -204,6 +206,10 @@ Un cop triat, prem el `+` al panell de control de versions per marcar-lo com a r
 ## 5\. Repositoris dins de Repositoris: Git Subtree
 
 A vegades voldreu incloure un projecte sencer (com una llibreria o un repositori de recursos) dins del vostre projecte principal, mantenint-lo independent però vinculat. Per a això fem servir **Subtree**.
+
+Un exemple típic és tenir un repositori amb imatges o mòduls que es comparteixen entre diversos projectes. Per aquest motiu, és millor tenir-los en un repositori separat i tenir-los com a Subtree dins de cadascun dels projectes que els utilitzen. D'aquesta manera, qualsevol actualització al repositori es pot portar fàcilment a tots els projectes que l'utilitzen.
+
+Un altre cas d'ús és poder integrar diversos repositoris independents, per exemple de diverses activitats o pràctiques a un repositori global de projecte.
 
 ### Com afegir un repositori com a Subtree
 
