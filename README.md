@@ -10,6 +10,20 @@ Visual Studio Code (VS Code) ja té integrat el suport per a Git, així que no c
 
 * **Git Graph**: Permet visualitzar l'historial de commits de manera gràfica i gestionar branques fàcilment.
 
+## 0\. Requisits Prèvis
+
+Abans de començar, assegureu-vos de tenir:
+
+-El Git instal·lat al vostre ordinador. Podeu descarregar-lo des de [git-scm.com](https://git-scm.com/).
+-Configurar el vostre nom d'usuari i correu electrònic a Git (només cal fer-ho una vegada):
+
+```Bash
+git config --global user.name "El teu Nom"
+git config --global user.email elteumail
+```
+
+A l'ordinador de l'escola, ja tenim Git instal·lat. El problema és que no tenim permís per definir la configuració global, per això, ho haurem de fer per cadascun dels nostre projectes.
+
 ## 1\. Clonar el Repositori
 
 El primer pas és portar el projecte que tenim al núvol (GitHub) al nostre ordinador local.
@@ -57,15 +71,17 @@ El commit és l'acció de "fer una foto" del projecte en aquell moment. Aquí é
                      │ git commit
                      ▼
            ┌────────────────────┐
-           │     Repository     │
-           │ (historial segur)  │
+           │     Repository     │   
+           │ (historial segur)  │ 
            └─────────┬──────────┘
-                     │ git checkout / git pull
+                     │ git checkout
                      ▼
            ┌────────────────────┐
            │  Working Directory │
            └────────────────────┘
 ```
+
+A més, la sincronització amb el repositori remot (GitHub) es fa amb les comandes `git push` (per pujar canvis) i `git pull` (per baixar canvis).
 
 ### Add i Commit per per terminal
 
@@ -87,7 +103,16 @@ El commit és l'acció de "fer una foto" del projecte en aquell moment. Aquí é
 
 ### Add i Commit per VS Code
 
-Un cop obert el vostre repositori amb VS Code, veureu que a la barra lateral esquerra hi ha una icona amb tres cercles i línies (Control de Codi Font o Ctrl + Shift + G).
+El primer caldrà fer, és definir l'usuari de Git (un nom i un correu) que serveix per identificar els nostres commits. Com que a l'ordinador de l'escola no tenim permisos per definir la configuració global, ho per cada repositori:
+
+Obriu la terminal integrada a VS Code (Ctrl + ñ) i executeu:
+
+```Bash
+git config user.name "El teu Nom"
+git config user.email elteumail
+```
+
+Veureu que a la barra lateral esquerra hi ha una icona amb tres cercles i línies (Control de Codi Font o Ctrl + Shift + G).
 
 A mesura que modifiqueu els fitxers .md, aquests apareixeran a la llista de "Canvis" (Changes).
 
